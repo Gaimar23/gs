@@ -11,6 +11,7 @@ import { TiTick } from "react-icons/ti";
 import Spline from "@splinetool/react-spline";
 import Footer from "../../components/footer/Footer";
 import { BsWhatsapp } from "react-icons/bs";
+import Footer02 from "../../components/footer02/Footer02";
 
 const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -125,11 +126,15 @@ const Home = () => {
           <ContactComp />
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
+      <Footer02 />
       <div className="whatsapp-container">
-        <div className="sub-container">
-          <BsWhatsapp className="whatsapp-icon" />
-        </div>
+        <a href="https://wa.me/237620232111" style={{ color: "white" }}>
+          <div className="sub-container">
+            <BsWhatsapp className="whatsapp-icon" />
+            <span style={{ fontSize: "15px" }}>Discutons</span>
+          </div>
+        </a>
       </div>
     </div>
   );

@@ -1,18 +1,14 @@
 import React from "react";
-import "./Footer.scss";
-import Logo from "../../assets/images/logo2.png";
-import { IoLogoLinkedin } from "react-icons/io5";
-import { IoLogoYoutube } from "react-icons/io5";
-import { BiLogoFacebookSquare } from "react-icons/bi";
-//
+import "./Footer02.scss";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { BiLogoYoutube } from "react-icons/bi";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import Logo from "../../assets/images/logo2.png";
 
-const Footer = () => {
+const Footer02 = () => {
   return (
-    <div className="footer">
+    <div className="footer-02">
       <div className="footer-container">
         <div className="footer-content">
           <div className="column">
@@ -78,4 +74,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer02;
