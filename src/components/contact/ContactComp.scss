@@ -1,0 +1,377 @@
+.contact-component{
+    display: flex;
+    justify-content: center;
+
+    .contact-us-global{
+        width: 65%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2.title{
+            font-size: 45px;
+            font-weight: 700;
+            text-align: center;
+            color: black;
+            position: relative;
+            -webkit-text-stroke: 0.1vw #0fada6;
+
+
+            &::before{
+                content: "Contact";
+                width: 0%;
+                height: 100%;
+                color: #0fada6;
+                -webkit-text-stroke: 0vw black;
+                position: absolute;
+                top: 0;
+                left: 0;
+                // border-right: 2px solid #0fada6;
+                overflow: hidden;
+                animation: animate_title 6s linear infinite;
+
+            }
+
+        }
+
+        p.desc{
+            color: #888888;
+            font-size: 20px;
+            letter-spacing: 0.8px;
+            text-align: center;
+            padding: 0 100px;
+            margin: 14px 0 50px 0;
+
+        }
+
+
+        form.message-us{
+            // border: 2px solid #cacaca;
+            border: 2px solid #0fada6;
+            // width: 100%;
+            width: 85%;
+            border-radius: 8px;
+            padding: 50px;
+
+            .detail{
+                // text-align: center;
+                margin-bottom: 35px;
+            }
+
+            .input,.message{
+                width: 100%;
+                display: flex;
+                flex-flow: column;
+                margin-top: 15px;
+                
+            }
+
+            .name,.email{
+                input{
+                    padding: 12px;
+                    background-color: transparent;
+                    outline: none;
+                    // border: 1px solid #cacaca;
+                    border: 1px solid #0fada6;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    color: white;
+                }
+            }
+
+            .message{
+                margin-bottom: 20px;
+                textarea{
+                    padding: 12px;
+                    background-color: transparent;
+                    outline: none;
+                    // border: 1px solid #cacaca;
+                    border: 1px solid #0fada6;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    color: white;
+                }
+            }
+
+            button.send-message{
+                outline: none;
+                // border: 2px solid #cacaca;
+                border: 2px solid #0fada6;
+                // background-color: green;
+                background-color: #0fada6;
+                border-radius: 20px;
+                padding: 10px;
+                width: 10rem;
+                font-size: 16px;
+                font-weight: 700;
+                color: white;
+                transition: all 0.3s ease-in-out;
+
+                &:hover{
+                    background-color: transparent;
+                    color: #0fada6;
+                    letter-spacing: 1.2px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 910px){
+    .contact-component{
+        display: flex;
+        justify-content: center;
+    
+        .contact-us-global{
+            width: 65%;
+    
+            h2.title{
+                font-size: 45px;
+                font-weight: 700;
+                text-align: center;
+            }
+    
+            p.desc{
+                color: #888888;
+                font-size: 20px;
+                letter-spacing: 0.8px;
+                text-align: center;
+                padding: 0 60px;
+                margin: 14px 0 50px 0;
+    
+            }
+    
+    
+            form.message-us{
+                border: 2px solid #cacaca;
+                width: 100%;
+                border-radius: 8px;
+                padding: 50px;
+    
+                .detail{
+                    // text-align: center;
+                    margin-bottom: 35px;
+                }
+    
+                .input,.message{
+                    width: 100%;
+                    display: flex;
+                    flex-flow: column;
+                    margin-top: 15px;
+    
+                }
+    
+                .name,.email{
+                    input{
+                        padding: 12px;
+                        background-color: transparent;
+                        outline: none;
+                        border: 1px solid #cacaca;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        color: white;
+                    }
+                }
+    
+                .message{
+                    margin-bottom: 20px;
+                    textarea{
+                        padding: 12px;
+                        background-color: transparent;
+                        outline: none;
+                        border: 1px solid #cacaca;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        color: white;
+                    }
+                }
+    
+                button.send-message{
+                    outline: none;
+                    border: 2px solid #cacaca;
+                    background-color: green;
+                    border-radius: 20px;
+                    padding: 10px;
+                    width: 7rem;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: white;
+                }
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width: 730px){
+    .contact-component{
+        display: flex;
+        justify-content: center;
+    
+        .contact-us-global{
+            width: 75% !important;
+    
+            h2.title{
+                font-size: 45px;
+                font-weight: 700;
+                text-align: center;
+            }
+    
+            p.desc{
+                color: #888888;
+                font-size: 20px;
+                letter-spacing: 0.8px;
+                text-align: center;
+                padding: 0 0px;
+                margin: 14px 0 50px 0;
+    
+            }
+    
+    
+            form.message-us{
+                border: 2px solid #cacaca;
+                width: 100%;
+                border-radius: 8px;
+                padding: 50px;
+    
+                .detail{
+                    // text-align: center;
+                    margin-bottom: 35px;
+                }
+    
+                .input,.message{
+                    width: 100%;
+                    display: flex;
+                    flex-flow: column;
+                    margin-top: 15px;
+    
+                }
+    
+                .name,.email{
+                    input{
+                        padding: 12px;
+                        background-color: transparent;
+                        outline: none;
+                        border: 1px solid #cacaca;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        color: white;
+                    }
+                }
+    
+                .message{
+                    margin-bottom: 20px;
+                    textarea{
+                        padding: 12px;
+                        background-color: transparent;
+                        outline: none;
+                        border: 1px solid #cacaca;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        color: white;
+                    }
+                }
+    
+                button.send-message{
+                    outline: none;
+                    border: 2px solid #cacaca;
+                    background-color: green;
+                    border-radius: 20px;
+                    padding: 10px;
+                    width: 7rem;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: white;
+                }
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width: 500px){
+    .contact-component{
+        display: flex;
+        justify-content: center;
+    
+        .contact-us-global{
+            width: 85% !important;
+    
+            h2.title{
+                font-size: 45px;
+                font-weight: 700;
+                text-align: center;
+            }
+    
+            p.desc{
+                color: #888888;
+                font-size: 15px;
+                letter-spacing: 0.8px;
+                text-align: center;
+                padding: 0 0px;
+                margin: 14px 0 50px 0;
+    
+            }
+    
+    
+            form.message-us{
+                border: 2px solid #cacaca;
+                width: 100%;
+                border-radius: 8px;
+                padding: 20px;
+    
+                .detail{
+                    // text-align: center;
+                    margin-bottom: 35px;
+                    font-size: 12px;
+                }
+    
+                .input,.message{
+                    width: 100%;
+                    display: flex;
+                    flex-flow: column;
+                    margin-top: 15px;
+    
+                }
+    
+                .name,.email{
+                    input{
+                        padding: 12px;
+                        background-color: transparent;
+                        outline: none;
+                        border: 1px solid #cacaca;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        color: white;
+                    }
+                }
+    
+                .message{
+                    margin-bottom: 20px;
+                    textarea{
+                        padding: 12px;
+                        background-color: transparent;
+                        outline: none;
+                        border: 1px solid #cacaca;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        color: white;
+                    }
+                }
+    
+                button.send-message{
+                    outline: none;
+                    border: 2px solid #cacaca;
+                    background-color: green;
+                    border-radius: 20px;
+                    padding: 10px;
+                    width: 7rem;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: white;
+                }
+            }
+        }
+    }
+    
+}

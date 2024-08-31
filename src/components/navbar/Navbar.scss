@@ -1,0 +1,136 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+
+    .container{
+        max-width: 1366px;
+        width: 100%;
+        // background-color: red;
+
+        .frist-navbar{
+            z-index: 1000;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 100px;
+
+            // position: fixed;
+            // width: 100%;
+            // top: 0;
+            // left: 50%;
+            // transform: translateX(-50%);
+            transition: 0.33s ease-in-out;
+
+
+            .logo-container{
+                display: flex;
+                align-items: center;
+
+                .link-nav{
+                    text-decoration: none;
+
+                    &.my-logo{
+
+                        .logo{
+                            width: 100px;
+                            height: 100px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    &.name{
+                        display: flex;
+                        flex-flow: column;
+                        font-weight: 800;
+                        margin-left: -5px;
+                        display: none;
+
+                        .first{
+                            margin-bottom: -2px;
+
+                        }
+
+                        .second{
+                            margin-top: -4px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+
+            .menu{
+                list-style: none;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 50px;
+
+                .main{
+
+                    .link-nav{
+                        text-decoration: none;
+                        color: white;
+                        opacity: 0.75;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+
+                    &.active{
+
+                        .link-nav{
+                            opacity: 1;
+                            color: #0fada6;
+                            // text-shadow: 1px 1px #0fada6;
+                        }
+                    }
+                }
+
+                .dropdown{
+
+                    .main{
+                            color: white;
+                            opacity: 0.75;
+                            cursor: pointer;
+                    }
+    
+
+                    .list{
+                        list-style: none;
+                        display: none;
+
+                        .list-item{
+
+                            .sub-link-nav{
+
+
+                            }
+                        }
+                    }
+                }
+
+                .btn-start{
+                    padding: 8px 10px;
+                    // background-color: #00d930;
+                    background-color: #0fada6;
+                    border-radius: 30px;
+                    font-weight: 700;
+                    width: 9rem;
+                    cursor: pointer;
+                    text-align: center;
+                    // color: white;
+                }
+
+            }
+
+            .nav-icon-menu{
+                display: none;
+            }
+
+        }
+    }
+}

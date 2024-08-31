@@ -1,0 +1,196 @@
+.home{
+    
+    // background: linear-gradient(to right, #000000,#100816);
+    // background: linear-gradient(to right, #000000,rgb(24, 7, 37,0.5));
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+
+    .welcome{
+        display: flex;
+        justify-content: center;
+
+        // background: url("../../assets/images/background/bg10.jpg");
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
+    
+        .welcom-container{
+            max-width: 1366px;
+            width: 100%;
+    
+            .hero{
+
+                .hero-container{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    place-items: center;
+    
+                    .first{
+                        margin-left: 100px;
+    
+                        h1{
+                            margin-bottom: 20px;
+                            font-size: 45px;
+                            color: #0fada6;
+                            -webkit-text-stroke: 0.1vw #ffffff;
+
+                        }
+
+                        p.details{
+                            margin-bottom: 15px;
+                            font-size: 20px;
+                        }
+
+                        .list-services{
+                            margin-bottom: 20px;
+                            .article{
+                                display: flex;
+                                align-items: center;
+                                gap: 15px;
+
+                                .article-icon{
+                                    height: 20px;
+                                    width: 20px;
+                                    color: #0fada6;
+                                }
+
+                                span{
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+    
+                        .action{
+                            border: 2px solid #0fada6;
+                            background-color: transparent;
+                            outline: none;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 5px;
+                            padding: 8px 10px;
+                            color: white;
+                            border-radius: 20px;
+                            margin-top: 15px;
+                            width: 9rem;
+                            cursor: pointer;
+                            font-size: 16px;
+                        }
+                    }
+
+                    .second{
+                        width: 500px;
+                        height: 500px;
+
+                        .planet{
+                            // width: 200px;
+                            // height: 200px;
+                        }
+                    }
+                }
+            }
+    
+
+        }
+
+    }
+
+    .formations-section{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        .formations-container{
+            max-width: 1366px;
+            width: 100%;
+            display: flex;
+            justify-content: center;    
+    
+        }
+
+    }
+
+    .projets-section{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        .projects-container{
+            max-width: 1366px;
+            width: 100%;
+            display: flex;
+            // flex-flow: column;
+            justify-content: center;    
+    
+        }
+
+    }
+
+    .about-us{
+        display: flex;
+        justify-content: center;
+
+        .about-us-container{
+            max-width: 1366px;
+            width: 100%;
+
+        }
+    }
+
+    .contact-us{
+        display: flex;
+        justify-content: center;
+
+        .contact-us-container{
+            max-width: 1366px;
+            width: 100%;
+
+        }
+    }
+
+    .whatsapp-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        // background-color: green;
+        // width: 50px;
+        // height: 50px;
+        // border-radius: 10%;
+        max-width: 1366px;
+        width: 100%;
+        border: 2px solid red;
+
+
+
+        .sub-container{
+            // max-width: 1366px;
+            // width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: green;
+            width: 50px;
+            height: 50px;
+            border-radius: 10%;
+            position: absolute;
+            right: 20px;
+            top: -60px;
+    
+            .whatsapp-icon{
+                width: 30px;
+                height: 30px;
+            }
+    
+
+        }
+    }
+}
+
+@media only screen and (max-width: 480px){
+    
+}
